@@ -1,8 +1,9 @@
 .phony all:
 all: ACS
 
-ACS: discinfo.c
-	gcc discinfo.c -pthread  -lreadline -lhistory -o discinfo
+ACS: diskinfo.c
+	gcc diskinfo.c -pthread  -lreadline -lhistory -o diskinfo
+	gcc disklist.c -o disklist
 
 .PHONY clean:
 clean:
